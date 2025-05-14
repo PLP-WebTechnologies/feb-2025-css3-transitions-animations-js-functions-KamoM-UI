@@ -1,0 +1,119 @@
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 20px;
+    margin: 100px;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+h2{
+    font-size: 35px;
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 800;
+    font-style: bold;
+}
+
+.container{
+    margin: auto;
+    padding: 20px;
+    max-width: 400px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    background: rgba(225, 225, 225, 0.207);
+}
+
+label{
+    display: block;
+    margin-bottom: 5px;
+    color: white;
+}
+
+input, textarea{
+    width: 90%;
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: rgba(225, 225, 225, 0);
+    color: white;
+}
+
+button{
+    padding: 10px 20px;
+    background-color: #F52F57;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover{
+    background-color: #90CF8E
+}
+
+#response{
+    padding: 10px;
+    margin-top: 10px;
+    border: 1px solid whitesmoke;
+    border-radius: 5px;
+    background-color: silver;
+    width: 90%;
+    color: black;
+}
+
+#reponse strong{
+    margin-bottom: 5px;
+}
+
+.bgAnimation{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(20, 1fr);
+    grid-template-rows: repeat(20, 1fr);
+    background: #1d1d1d;
+    filter: saturate(2);
+    overflow: hidden;
+}
+
+.colorBox{
+    z-index: 2;
+    filter: brightness(1.1);
+    transition: 2s ease;
+    position: relative;
+    margin: 2px;
+    background: #1d1d1d;
+}
+
+.colorBox:hover{
+    background: #00bfff;
+    transition-duration: 0s;
+
+}
+
+.backgroundAmim{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 60px;
+    background: #00bfff;
+    filter: blur(60px);
+    animation: animBack 6s linear infinite;
+
+}
+
+@keyframes animBack{
+    0%{
+        top: -60px;
+    }
+    100%{
+        top: 120%;
+    }
+}
